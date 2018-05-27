@@ -1,0 +1,19 @@
+{
+  "name": "haksik",
+  "version": "1.0.0",
+  "description": "CAU TODAY HAKSIK",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "inbaeKang",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "child_process": "^1.0.2",
+    "exec": "^0.2.1",
+    "express": "^4.16.3",
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security"
+  }
+}
