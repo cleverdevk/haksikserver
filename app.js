@@ -17,7 +17,7 @@ var exec = require('child_process').exec,
     child;
 
 app.get('/keyboard',function(req,res){
-    var data = {
+    var data = { 
         'type': 'buttons',
         'buttons':['308관']
     };
@@ -31,7 +31,6 @@ app.post('/message',function(req,res){
     console.log('전달받은 메세지: '+msg);
     var send = {};
     child = exec("D:\\Javascript_Projects\\haksik\\info308.jar", function (error, stdout, stderr) {
-    console.log('stdout: ' + stdout);
     console.log('stderr: ' + stderr);
     if (error !== null) {
         console.log('exec error: ' + error);
@@ -47,7 +46,6 @@ app.post('/message',function(req,res){
     var ldata = iconv.decode(ltemp,'EUC-KR');
     var ddata = iconv.decode(dtemp,'EUC-KR');
             
-    console.log(data);
     switch(msg){
         case '308관':
             send = {
